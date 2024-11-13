@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #FF6F61;
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #FF6F61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #FF3333;
+  color: #fff;
+}
+
+.footer-image-container {
+  display: flex;
+  align-items: center;
+}
+
+.yt-image {
+  width: 40px; /* Ajusta el tamaño según sea necesario */
+  height: 40px;
+  border-radius: 50%; /* Hace la imagen circular */
+}
+
+.fb-image {
+  width: 30px; /* Ajusta el tamaño según sea necesario */
+  height: 30px;
+  border-radius: 50%; /* Hace la imagen circular */
+}
+
+.ig-image {
+  width: 30px; /* Ajusta el tamaño según sea necesario */
+  height: 30px;
+  border-radius: 50%; /* Hace la imagen circular */
+}

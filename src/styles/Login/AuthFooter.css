@@ -1,0 +1,22 @@
+.auth-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .auth-footer p {
+    margin: 5px 0;
+  }
+  
+  .terms-link {
+    color: #FF6F61;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .terms-link:hover {
+    color: #FF3333;
+  }
+  

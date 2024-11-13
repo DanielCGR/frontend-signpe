@@ -1,0 +1,143 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.login-container h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.login-container h2 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Estilos para "Accede con Google" */
+.google-label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #ffffff; /* Color de Google */
+  color: #000000;
+  border: solid 1px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.google-button:hover {
+  background-color: #000000;
+  color: #fff;
+  border: solid 1px #ffffff;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Línea de separación */
+.separator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+  color: #aaa;
+  font-weight: bold;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+/* Estilos del formulario de inicio de sesión */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  padding: 12px;
+  background-color: #FF6F61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #FF3333;
+}
+
+.login-links {
+  margin-top: 15px;
+}
+
+.forgot-password {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+.register-link {
+  color: #FF6F61;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #FF3333;
+}

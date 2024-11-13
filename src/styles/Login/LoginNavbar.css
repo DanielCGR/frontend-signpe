@@ -1,0 +1,33 @@
+.login-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-button {
+    position: absolute;
+    left: 20px;
+    text-decoration: none;
+    color: #FF6F61;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .back-button:hover {
+    color: #FF3333;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }  

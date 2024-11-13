@@ -1,0 +1,69 @@
+.dashboard {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2em;
+  color: #FF6F61;
+  margin-bottom: 50px;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Espacio adicional entre los botones */
+  margin-bottom: 30px;
+}
+
+.dashboard-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px; /* Aumenta el ancho del botón */
+  padding: 20px; /* Aumenta el padding para que el botón sea más alto */
+  background-color: #f2f2f2;
+  text-align: center;
+  border-radius: 10px; /* Redondea un poco más las esquinas */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  font-size: 1.4em; /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición de transformación */
+}
+
+.dashboard-button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+.icon-right {
+  margin-left: 15px; /* Espacio adicional entre el texto y el icono */
+  font-size: 2em; /* Aumenta el tamaño del icono */
+  color: #FF6F61;
+}
+
+.history-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-item {
+  padding: 15px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  color: #333;
+}
