@@ -1,0 +1,49 @@
+.select-category {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.select-category-content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-button {
+  font-size: 1em;
+  color: #FF6F61;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 20px;
+}
+
+.category-item {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto de hover */
+}
+
+.category-item:hover {
+  background-color: #ffe8d1;
+  transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Añade sombra al pasar el mouse */
+}

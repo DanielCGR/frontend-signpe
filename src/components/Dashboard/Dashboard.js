@@ -1,16 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
-import '../../styles/Dashboard//Dashboard.css';
+import '../../styles/Dashboard/Dashboard.css';
 
 function Dashboard() {
+  const navigate = useNavigate();
+
   return (
     <div className="dashboard">
       <h1 className="dashboard-title">Dashboard</h1>
       
       <div className="dashboard-buttons">
         {/* Botón Aprendizaje */}
-        <div className="dashboard-button">
+        <div className="dashboard-button" onClick={() => navigate('/select-level')}>
           <h3>Aprendizaje</h3>
           <FontAwesomeIcon icon={faBookOpen} className="icon-right" />
         </div>

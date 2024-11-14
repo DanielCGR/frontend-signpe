@@ -1,0 +1,53 @@
+.select-level {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .select-level-content {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .back-button {
+    font-size: 1em;
+    color: #FF6F61;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .level-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .level-button.enabled {
+    background-color: #FF6F61;
+    color: #fff;
+  }
+  
+  .level-button.enabled:hover {
+    background-color: #FF3333;
+  }
+  
+  .level-button.disabled {
+    background-color: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+  }

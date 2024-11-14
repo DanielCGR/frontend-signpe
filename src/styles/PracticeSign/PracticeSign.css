@@ -1,0 +1,119 @@
+.practice-sign {
+    position: relative;
+    width: 1280px; /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .video-feed {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    /* Este estilo asegura que el video ocupe todo el ancho del contenedor */
+  }
+  
+  .landmark-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que el usuario interactúe con el video sin interferencias */
+    border-radius: 8px;
+  }
+  
+  .practice-sign-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    font-size: 1em;
+    color: #ff6f61;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .horizontal-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .static-image,
+  .camera-view {
+    width: 1280px; /* Ajusta el tamaño de la imagen y cámara según tus necesidades */
+    height: auto;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+  }
+  
+  .progress-section label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #ff6f61;
+    width: 0%;
+    transition: width 0.1s ease;
+  }
+  
+  .start-practice-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .start-practice-button:hover {
+    background-color: #ff3333;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+  }
+  

@@ -13,27 +13,29 @@ import Register from './components/Register/Register';
 import TermsAndConditions from './components/Legal/TermsAndConditions';
 import Dashboard from './components/Dashboard/Dashboard';
 import DashboardNavbar from './components/Dashboard/DashboardNavbar';
+import SelectLevel from './components/SelectLevel/SelectLevel';
+import SelectCategory from './components/SelectCategory/SelectCategory';
+import SelectSign from './components/SelectSign/SelectSign';
+import PracticeSign from './components/PracticeSign/PracticeSign';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          {/* Navbar para las rutas de login, registro y términos */}
           <Route path="/login" element={<LoginNavbar />} />
           <Route path="/forgot-password" element={<LoginNavbar />} />
           <Route path="/register" element={<LoginNavbar />} />
           <Route path="/terms" element={<LoginNavbar />} />
-
-          {/* Navbar del dashboard, solo se muestra en la ruta /dashboard */}
-          <Route path="/dashboard" element={<DashboardNavbar />} /> 
-
-          {/* Navbar principal para el landing */}
+          <Route path="/dashboard" element={<DashboardNavbar />} />
+          <Route path="/select-level" element={<DashboardNavbar />} />
+          <Route path="/select-category" element={<DashboardNavbar />} />
+          <Route path="/select-sign" element={<DashboardNavbar />} />
+          <Route path="/practice-sign" element={<DashboardNavbar />} />
           <Route path="*" element={<Navbar />} />
         </Routes>
 
         <Routes>
-          {/* Rutas principales */}
           <Route path="/" element={
             <>
               <Header />
@@ -42,15 +44,15 @@ function App() {
               <Footer />
             </>
           } />
-
-          {/* Rutas adicionales */}
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
           <Route path="/terms" element={<TermsAndConditions />} />
-          
-          {/* Ruta única para el dashboard */}
           <Route path="/dashboard" element={<Dashboard />} /> 
+          <Route path="/select-level" element={<SelectLevel />} />
+          <Route path="/select-category" element={<SelectCategory />} />
+          <Route path="/select-sign" element={<SelectSign />} />
+          <Route path="/practice-sign" element={<PracticeSign />} />
         </Routes>
       </div>
     </Router>
