@@ -17,6 +17,8 @@ import SelectLevel from './components/SelectLevel/SelectLevel';
 import SelectCategory from './components/SelectCategory/SelectCategory';
 import SelectSign from './components/SelectSign/SelectSign';
 import PracticeSign from './components/PracticeSign/PracticeSign';
+import Historial from './components/Historial/Historial';
+import Evaluation from './components/Evaluation/Evaluation';
 
 function App() {
   return (
@@ -53,6 +55,8 @@ function App() {
           <Route path="/select-category" element={<SelectCategory />} />
           <Route path="/select-sign" element={<SelectSign />} />
           <Route path="/practice-sign" element={<PracticeSign />} />
+          <Route path="/historial" element={<Historial />} />
+          <Route path="/evaluation" element={<Evaluation />} />
         </Routes>
       </div>
     </Router>

@@ -1,0 +1,45 @@
+.historial {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.history-title {
+  font-size: 2em;
+  color: #FF6F61;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.historial p {
+  color: #666;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.volver-btn {
+  background: none;
+  border: none;
+  color: #FF6F61;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  padding: 0;
+  outline: none;
+}
+
+.volver-btn:hover {
+  color: #FF3333;
+}

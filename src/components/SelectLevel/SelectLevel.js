@@ -17,10 +17,10 @@ function SelectLevel() {
         </button>
 
         {/* Título */}
-        <h1>Seleccionar Nivel</h1>
+        <h1>Selecciona tu nivel</h1>
 
         {/* Botón Básico habilitado */}
-        <div className="level-button enabled" onClick={() => navigate('/select-category')}>
+        <div className="level-button enabled" onClick={() => navigate('/select-category', { state: { nivel: 'Básico' } })}>
           <span>Básico</span>
           <FontAwesomeIcon icon={faLockOpen} className="icon-enable" />
         </div>

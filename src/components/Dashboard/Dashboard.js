@@ -1,8 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen, faClipboardCheck } from '@fortawesome/free-solid-svg-icons';
+import { faClipboardCheck, faHistory } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Dashboard/Dashboard.css';
+import learn from '../../assets/Dashboard/learn.jpeg';
+import history from '../../assets/Dashboard/history.png';
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -11,25 +13,28 @@ function Dashboard() {
     <div className="dashboard">
       <h1 className="dashboard-title">Dashboard</h1>
       
-      <div className="dashboard-buttons">
-        {/* Botón Aprendizaje */}
-        <div className="dashboard-button" onClick={() => navigate('/select-level')}>
+      <div className="dashboard-cards horizontal">
+        {/* Card Aprendizaje */}
+        <div className="dashboard-card medium" onClick={() => navigate('/select-level')}>
+          <img
+            src={learn}
+            alt="Aprendizaje"
+            className="dashboard-card-img"
+          />
           <h3>Aprendizaje</h3>
-          <FontAwesomeIcon icon={faBookOpen} className="icon-right" />
-        </div>
-
-        {/* Botón Evaluaciones */}
-        <div className="dashboard-button">
-          <h3>Evaluaciones</h3>
           <FontAwesomeIcon icon={faClipboardCheck} className="icon-right" />
         </div>
-      </div>
 
-      <h2 className="history-title">Historial</h2>
-      <div className="history">
-        <div className="history-item">Evaluación 1</div>
-        <div className="history-item">Evaluación 2</div>
-        <div className="history-item">Evaluación 3</div>
+        {/* Card Historial */}
+        <div className="dashboard-card medium" onClick={() => navigate('/historial')}>
+          <img
+            src={history}
+            alt="Historial"
+            className="dashboard-card-img"
+          />
+          <h3>Historial</h3>
+          <FontAwesomeIcon icon={faHistory} className="icon-right" />
+        </div>
       </div>
     </div>
   );

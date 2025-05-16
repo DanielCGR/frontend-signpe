@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '@tensorflow/tfjs';
 import * as tf from '@tensorflow/tfjs';
 import * as poseDetection from '@tensorflow-models/pose-detection';
@@ -9,6 +9,8 @@ import '../../styles/PracticeSign/PracticeSign.css';
 
 function PracticeSign() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { nivel, categoria, senia } = location.state || {};
   const [buttonText, setButtonText] = useState("Iniciar práctica");
   const [recording, setRecording] = useState(false);
   const [predictedLabel, setPredictedLabel] = useState(null);
@@ -137,11 +139,11 @@ function PracticeSign() {
   return (
     <div className="practice-sign">
       <div className="practice-sign-content">
-        <button className="back-button" onClick={() => navigate('/select-sign')}>
+        <button className="back-button" onClick={() => navigate('/select-sign', { state: { nivel, categoria } })}>
           &lt; Volver
         </button>
 
-        <h1>Seña</h1>
+        <h1>{nivel} - {categoria} - {senia}</h1>
 
         <div className="horizontal-container">
           <div className="static-image">

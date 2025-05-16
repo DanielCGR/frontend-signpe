@@ -47,3 +47,23 @@ h1 {
   transform: scale(1.05); /* Aumenta el tamaño ligeramente */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Añade sombra al pasar el mouse */
 }
+
+.start-evaluation-button {
+  margin: 32px auto 0 auto;
+  display: block;
+  background-color: #FF6F61;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.start-evaluation-button:hover {
+  background-color: #e65c50;
+  transform: translateY(-2px) scale(1.03);
+}
